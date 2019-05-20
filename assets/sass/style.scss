@@ -1,0 +1,68 @@
+body {
+	margin: 0;
+	img {
+		width: 100%;
+	}
+	header {
+		.menu {
+			background-color: #a5a5a5;
+			border-top: solid 1px #ececec;
+			color: #000;
+			height: 50px;
+			position: relative;
+			.burger {
+				appearance:none;
+				-moz-appearance:none;
+				-webkit-appearance:none;
+				color:inherit;
+				cursor:pointer;
+				font-size:5vw;
+				line-height:50px;
+				margin:0;
+				outline:0;
+				padding:0;
+				text-align:center;		  
+				width:50px;
+				&:before {
+					content: '☰';
+				}
+				&:checked {
+					&+ nav {
+						height: calc(100vh - 50px);
+						opacity: 0.9;
+					}
+					&:before {
+						content: 'X';
+					}
+				}
+			}
+			nav {
+				background:inherit;
+				font-size:20px;
+				font-weight:bold;
+				height:0;
+				overflow:hidden;
+				text-transform:uppercase;
+				transition:height .2s;
+				width: 100%;
+				& > * {
+					display: block;
+					letter-spacing: 1px;
+					padding: 0 20px;
+					width: 100%;
+					font-size: 4vw;
+				}
+				ul {
+					list-style-type: none;
+					li {
+						text-align: center;
+						a {
+							color: #000;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
