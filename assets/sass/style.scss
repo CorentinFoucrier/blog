@@ -31,14 +31,30 @@ body {
 			text-align: justify;
 		}
 		article {
+			border-bottom: 1px solid #000;
 			p {
 				margin-left: 0.7em;
 				margin-right: 0.5em;
 				padding-left: 0.3em;
 				border-left: 2px solid #e2e2e2;
 			}
-			+p {
-				color: #ececec;
+			.commentsTime {
+				margin: 0.5em;
+				padding-right: 0.3em;
+				text-align: right;
+				border-left: unset;
+				border-right: 2px solid #e2e2e2;
+			}
+			&:nth-child(odd) {
+				background-color: #dbdbdb;
+				border-bottom: 1px solid #000;
+				p {
+					border-left: 2px solid #fff;
+				}
+				.commentsTime {
+					border-left: unset;
+					border-right: 2px solid #fff;
+				}
 			}
 		}
 	}
@@ -60,6 +76,12 @@ body {
 				font-size: 1.1em;
 				font-weight: bold;
 			}
+		}
+	}
+
+	.section-1-archives {
+		h2 {
+			margin-bottom: 0.5em;
 		}
 	}
 

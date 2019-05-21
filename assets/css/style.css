@@ -19,13 +19,27 @@ body {
       font-size: 1.5rem; }
   body section p {
     text-align: justify; }
-  body section article p {
-    margin-left: 0.7em;
-    margin-right: 0.5em;
-    padding-left: 0.3em;
-    border-left: 2px solid #e2e2e2; }
-  body section article + p {
-    color: #ececec; }
+  body section article {
+    border-bottom: 1px solid #000; }
+    body section article p {
+      margin-left: 0.7em;
+      margin-right: 0.5em;
+      padding-left: 0.3em;
+      border-left: 2px solid #e2e2e2; }
+    body section article .commentsTime {
+      margin: 0.5em;
+      padding-right: 0.3em;
+      text-align: right;
+      border-left: unset;
+      border-right: 2px solid #e2e2e2; }
+    body section article:nth-child(odd) {
+      background-color: #dbdbdb;
+      border-bottom: 1px solid #000; }
+      body section article:nth-child(odd) p {
+        border-left: 2px solid #fff; }
+      body section article:nth-child(odd) .commentsTime {
+        border-left: unset;
+        border-right: 2px solid #fff; }
   body .section-1 {
     margin-bottom: 1.8em;
     padding-bottom: 1.7em;
@@ -42,6 +56,8 @@ body {
         text-transform: uppercase;
         font-size: 1.1em;
         font-weight: bold; }
+  body .section-1-archives h2 {
+    margin-bottom: 0.5em; }
   body footer {
     height: 100%;
     background-color: #1E1E23;
