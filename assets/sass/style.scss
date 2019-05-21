@@ -8,11 +8,17 @@ body {
 	}
 
 	header {
-		h1 {
-			margin-bottom: 0;
-		}
-		h3 {
-			margin-top: 0;
+		.titles {
+			background-color: #1E1E23;
+			color: #FFF;
+			h1 {
+				margin: 0;
+				padding: 0.4em 0 0 0;
+			}
+			h3 {
+				margin: 0;
+				padding: 0 0 0.4em 0;
+			}
 		}
 		.social {
 			display: flex;
@@ -116,3 +122,4 @@ body {
 
 @import 'navbar.scss';
 @import 'search.scss';
+@import 'login.scss';

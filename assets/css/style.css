@@ -5,10 +5,15 @@ body {
   text-align: center; }
   body img {
     width: 100%; }
-  body header h1 {
-    margin-bottom: 0; }
-  body header h3 {
-    margin-top: 0; }
+  body header .titles {
+    background-color: #1E1E23;
+    color: #FFF; }
+    body header .titles h1 {
+      margin: 0;
+      padding: 0.4em 0 0 0; }
+    body header .titles h3 {
+      margin: 0;
+      padding: 0 0 0.4em 0; }
   body header .social {
     display: flex;
     justify-content: space-between;
@@ -178,7 +183,7 @@ header #menu {
   padding: 0;
   position: relative; }
 
-input[type="text"] {
+header input[type="text"] {
   height: 34px;
   font-size: 1.5em;
   display: inline-block;
@@ -197,10 +202,10 @@ input[type="text"] {
   transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
   cursor: pointer; }
 
-input[type="text"]:focus:hover {
+header input[type="text"]:focus:hover {
   border-bottom: 1px solid #BBB; }
 
-input[type="text"]:focus {
+header input[type="text"]:focus {
   width: 170px;
   z-index: 1;
   border-bottom: 1px solid #BBB;
@@ -223,5 +228,38 @@ button[type="submit"] {
   background-color: unset;
   margin: 0; }
 
-input[type="submit"]:hover {
+header input[type="submit"]:hover {
   opacity: 0.8; }
+
+section {
+  box-sizing: content-box;
+  margin-top: -1em; }
+  section .form {
+    background-color: #F5F5F5;
+    margin: auto;
+    padding: 25px;
+    border-top: 2px solid #7F7F7F; }
+    section .form input {
+      background-color: #FFF;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px; }
+    section .form button {
+      background-color: #EF3B3A;
+      width: 100%;
+      border: 0;
+      padding: 15px;
+      color: #FFF;
+      font-size: 14px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: bold; }
+    section .form legend {
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: left;
+      font-size: 1.5em;
+      padding: 10px; }

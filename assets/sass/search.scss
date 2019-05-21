@@ -7,7 +7,7 @@
 	position: relative;
 }
 
-input[type="text"] {
+header input[type="text"] {
 	height: 34px;
 	font-size: 1.5em;
 	display: inline-block;
@@ -27,11 +27,11 @@ input[type="text"] {
 	cursor: pointer;
 }
 
-input[type="text"]:focus:hover {
+header input[type="text"]:focus:hover {
 	border-bottom: 1px solid #BBB;
 }
 
-input[type="text"]:focus {
+header input[type="text"]:focus {
 	width: 170px;
 	z-index: 1;
 	border-bottom: 1px solid #BBB;
@@ -55,6 +55,6 @@ button[type="submit"] {
 	margin: 0;
 }
 
-input[type="submit"]:hover {
+header input[type="submit"]:hover {
 	opacity: 0.8;
 }
