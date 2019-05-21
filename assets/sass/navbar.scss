@@ -6,6 +6,7 @@ header {
 	.content {
 		width: 100%;
 	}
+
 	a {
 		font-family: 'work sans', sans serif;
 		text-decoration: none;
@@ -17,12 +18,15 @@ header {
 			opacity:0.5;
 		}
 	}
+
 	ul {
 		padding: 0;
 		list-style-type: none;
 	}
+
 	nav {
-		border-top: 1px solid #e2e2e2;
+		border-top: 2px solid #e2e2e2;
+		border-bottom: 1px solid #e2e2e2;
 		height: 65px;
 		button {
 			float: right;

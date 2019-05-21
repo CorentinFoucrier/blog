@@ -8,12 +8,18 @@ body {
 	}
 
 	header {
+		h1 {
+			margin-bottom: 0;
+		}
+		h3 {
+			margin-top: 0;
+		}
 		.social {
 			display: flex;
 			justify-content: space-between;
 			padding: 0 1em 1em 1em;
 			list-style: none;
-			border-bottom: 1px solid #e2e2e2;
+			border-bottom: 2px solid #e2e2e2;
 			i {
 				font-size: 1.5rem;
 			}
@@ -24,12 +30,23 @@ body {
 		p {
 			text-align: justify;
 		}
+		article {
+			p {
+				margin-left: 0.7em;
+				margin-right: 0.5em;
+				padding-left: 0.3em;
+				border-left: 2px solid #e2e2e2;
+			}
+			+p {
+				color: #ececec;
+			}
+		}
 	}
 
 	.section-1 {
 		margin-bottom: 1.8em;
 		padding-bottom: 1.7em;
-		border-bottom: 1px solid #e2e2e2;
+		border-bottom: 2px solid #e2e2e2;
 		.p-overImg {
 			position: relative;
 			p {
@@ -50,7 +67,7 @@ body {
 		height: 100%;
 		div {
 			padding: 1px 0 15px;
-			border-bottom: solid 1px #ececec;
+			border-bottom: 1px solid #ececec;
 		}
 		address {
 			text-align: initial;
@@ -76,3 +93,4 @@ body {
 }
 
 @import 'navbar.scss';
+@import 'search.scss';
