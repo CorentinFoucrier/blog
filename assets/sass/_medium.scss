@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+	body {
+		.container {
+			display: grid;
+			grid-template-columns: 5em auto 5em;
+			grid-template-rows: auto 1fr;
+			
+			.section-2 {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-column-start: 2;
+				
+			}
+			article {
+				border: unset;
+				&:nth-child(odd) {
+					background-color: unset;
+					border: unset;
+				}
+				
+			}
+		}
+	}
+}

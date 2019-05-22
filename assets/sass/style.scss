@@ -9,8 +9,8 @@ body {
 
 	header {
 		.titles {
-			background-color: #1E1E23;
-			color: #FFF;
+			background-color: #2c3e50;
+			color: #ecf0f1;
 			h1 {
 				margin: 0;
 				padding: 0.4em 0 0 0;
@@ -23,21 +23,49 @@ body {
 		.social {
 			display: flex;
 			justify-content: space-between;
-			padding: 0 1em 1em 1em;
+			padding: 0 1em 0 1em;
 			list-style: none;
-			border-bottom: 2px solid #e2e2e2;
+			
+			
 			i {
 				font-size: 1.5rem;
 			}
 		}
 	}
 
-	section {
+	.connexion {
+		margin-top: 0;
+	}
+
+	.section-1 {
+		margin-bottom: 1.8em;
+		padding-bottom: 1.7em;
+		border-bottom: 2px solid #e2e2e2;
+		.p-overImg {
+			position: relative;
+			p {
+				margin: 0;
+				color: #ecf0f1;
+				position: absolute;
+				bottom: 35%;
+				text-align: center;
+				line-height: 2em;
+				text-transform: uppercase;
+				font-size: 1.1em;
+				font-weight: bold;
+			}
+		}
+	}
+	
+	.section-2 {
 		p {
 			text-align: justify;
 		}
 		article {
 			border-bottom: 1px solid #000;
+			h2 {
+				font-size: 1em;
+			}
 			p {
 				margin-left: 0.7em;
 				margin-right: 0.5em;
@@ -52,14 +80,13 @@ body {
 				border-right: 2px solid #e2e2e2;
 			}
 			&:nth-child(odd) {
-				background-color: #dbdbdb;
-				border-bottom: 1px solid #000;
+				background-color: #bdc3c7;
 				p {
-					border-left: 2px solid #fff;
+					border-left: 2px solid #ecf0f1;
 				}
 				.commentsTime {
 					border-left: unset;
-					border-right: 2px solid #fff;
+					border-right: 2px solid #ecf0f1;
 				}
 			}
 			&:first-child {
@@ -71,29 +98,11 @@ body {
 		}
 	}
 
-	.section-1 {
-		margin-bottom: 1.8em;
-		padding-bottom: 1.7em;
-		border-bottom: 2px solid #e2e2e2;
-		.p-overImg {
-			position: relative;
-			p {
-				margin: 0;
-				color: #fff;
-				position: absolute;
-				bottom: 35%;
-				text-align: center;
-				line-height: 2em;
-				text-transform: uppercase;
-				font-size: 1.1em;
-				font-weight: bold;
-			}
-		}
-	}
 
 	.section-1-archives {
 		h2 {
-			margin-bottom: 0.5em;
+			margin-top: 0;
+			padding: 0.8em 0 0.8em 0;
 		}
 	}
 
@@ -105,8 +114,9 @@ body {
 		}
 		address {
 			text-align: initial;
+			padding-left: 0.5em;
 		}
-		background-color: #1E1E23;
+		background-color: #2c3e50;
 		color: #ececec;
 		ul {
 			list-style: none;
@@ -129,3 +139,4 @@ body {
 @import 'navbar.scss';
 @import 'search.scss';
 @import 'login.scss';
+@import 'medium.scss';
