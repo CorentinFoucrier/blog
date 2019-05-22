@@ -45,6 +45,10 @@ body {
       body section article:nth-child(odd) .commentsTime {
         border-left: unset;
         border-right: 2px solid #fff; }
+    body section article:first-child {
+      border-top: 1px solid #000; }
+    body section article > div {
+      padding: 0.3em 0.5em 0 0.5em; }
   body .section-1 {
     margin-bottom: 1.8em;
     padding-bottom: 1.7em;
