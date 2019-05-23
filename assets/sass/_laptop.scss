@@ -1,0 +1,94 @@
+@media (min-width: 769px) {
+    body {
+        header.content {
+            #menuToggle {
+                input {
+                    display: none;
+                }
+                span {
+                    background: none;
+                }
+            }
+            .social {
+                padding: 0 40% 0 40%;
+                margin-top: 0;
+                margin-bottom: 1%;
+                i {
+                    font-size: 1rem;
+                }
+            }
+            nav {
+                border-top: 1px solid #e2e2e2;
+                #warp {
+                    display: none!important;
+                    color: red;
+                }
+            }
+            #horizontalMenuDiv{
+                position: relative;
+                bottom: 22px;
+            }
+            #horizontalMenu{
+                display: flex!important;
+                justify-content: space-around;
+                width: 50%;
+            }
+            
+            #horizontalMenu {
+                display: unset;
+            }
+        }
+
+        .section-1 {
+            .p-overImg {
+                p {
+                    bottom: 45%;
+                    right: 8%;
+                }
+                img {
+                    height: 412px;
+                }
+            }
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            ul {
+                list-style: inside;
+                text-align: left;
+                padding: 1em;
+                li {
+                    border-bottom: none;
+                    a {
+                        display: inline-block;
+                        margin: 0.8em 0 0.8em;
+                        text-transform: uppercase;
+                        color: #ececec;
+                        text-decoration: none;
+                    }
+                }
+            }
+            div {
+                border-left: 1px groove #e2e2e2;
+                border-bottom: none;
+                order: 1;
+            }
+        }
+
+        /* CONNEXION */
+		.connexion {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+			.form {
+                margin: 0;
+                padding: 50px 20% 50px 20%;
+                border-top: none;
+                &:first-child {
+                    border-right: 2px solid #7F7F7F;
+                }
+			}
+		}
+    }
+}

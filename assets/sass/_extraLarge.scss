@@ -1,0 +1,44 @@
+@media (min-width: 1025px) {
+    body {
+        .container {
+			display: grid;
+			grid-template-columns: 20% auto 20%;
+			grid-template-rows: 1fr 1fr;
+            grid-template-rows: auto 1fr;
+            
+
+			.section-2 {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+                grid-column-start: 2;
+                grid-gap: 30px;
+			}
+        }
+
+        .section-1 {
+            .p-overImg {
+                p {
+                    bottom: 50%;
+                    right: 25%;
+                }
+                img {
+                    height: 512px;
+                }
+            }
+        }
+
+   		/* CONNEXION */
+		.connexion {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+			.form {
+                margin: 0;
+                padding: 50px 20% 50px 20%;
+                border-top: none;
+                &:first-child {
+                    border-right: 2px solid #7F7F7F;
+                }
+			}
+		}
+    }
+}

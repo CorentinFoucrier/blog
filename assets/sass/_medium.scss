@@ -1,5 +1,10 @@
 @media (min-width: 768px) {
 	body {
+		header {
+			#horizontalMenu {
+				display: none;
+			}
+		}
 		.container {
 			display: grid;
 			grid-template-columns: 5em auto 5em;
@@ -9,8 +14,9 @@
 				display: grid;
 				grid-template-columns: 1fr 1fr;
 				grid-column-start: 2;
-				
+                grid-gap: 30px;				
 			}
+
 			article {
 				border: unset;
 				&:nth-child(odd) {
@@ -25,6 +31,21 @@
 					}
 				}
 				
+			}
+		}
+
+		.section-1{
+			.p-overImg {
+				img {
+                    height: 412px;
+                }
+			}
+		}
+
+		/* CONNEXION */
+		.connexion {
+			.form {
+				padding: 50px 120px 50px 120px;
 			}
 		}
 	}

@@ -10,3 +10,7 @@ function randomCommentsNumbers() {
 
 	}
 }
+
+if (window.matchMedia("(min-width: 1025px)").matches) {
+	document.getElementsByClassName('p-overImg').item(0).childNodes[1].src = "https://picsum.photos/id/1031/1920/280?grayscale";
+}
