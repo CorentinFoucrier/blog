@@ -16,6 +16,13 @@
 				&:nth-child(odd) {
 					background-color: unset;
 					border: unset;
+					p {
+						border-left: 2px solid #e2e2e2;
+					}
+					.commentsTime {
+						border-left: unset;
+						border-right: 2px solid #e2e2e2;
+					}
 				}
 				
 			}

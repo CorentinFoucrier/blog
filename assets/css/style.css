@@ -122,9 +122,11 @@ header #menuToggle {
   display: flex;
   flex-direction: column;
   position: relative;
+  /* Custom Code */
   width: fit-content;
   width: -moz-fit-content;
   width: -webkit-fit-content;
+  /* End custom */
   top: 25px;
   left: 25px;
   z-index: 1;
@@ -284,4 +286,9 @@ header input[type="submit"]:hover {
       border: unset; }
       body .container article:nth-child(odd) {
         background-color: unset;
-        border: unset; } }
+        border: unset; }
+        body .container article:nth-child(odd) p {
+          border-left: 2px solid #e2e2e2; }
+        body .container article:nth-child(odd) .commentsTime {
+          border-left: unset;
+          border-right: 2px solid #e2e2e2; } }

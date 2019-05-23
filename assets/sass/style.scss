@@ -136,7 +136,8 @@ body {
 	}
 }
 
-@import 'navbar.scss';
-@import 'search.scss';
-@import 'login.scss';
-@import 'medium.scss';
+@import '_navbar.scss';
+@import '_search.scss';
+@import '_login.scss';
+@import '_medium.scss';
+@import '_laptop.scss';

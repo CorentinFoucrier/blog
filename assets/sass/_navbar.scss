@@ -38,9 +38,11 @@ header {
 		display: flex;
 		flex-direction: column;
 		position: relative;
+		/* Custom Code */
 		width: fit-content;
 		width: -moz-fit-content;
 		width: -webkit-fit-content;
+		/* End custom */
 		top: 25px;
 		left: 25px;
 		z-index: 1;
