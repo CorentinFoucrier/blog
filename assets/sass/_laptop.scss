@@ -78,17 +78,17 @@
         }
 
         /* CONNEXION */
-		.connexion {
+        .connexion {
             display: grid;
             grid-template-columns: 1fr 1fr;
-			.form {
+            .form {
                 margin: 0;
                 padding: 50px 20% 50px 20%;
                 border-top: none;
                 &:first-child {
                     border-right: 2px solid #7F7F7F;
                 }
-			}
-		}
+            }
+        }
     }
 }
